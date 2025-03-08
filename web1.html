@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BARUKA HUB</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://whatsapp.com/channel/0029VajdUjO7tkj0v3rZHw3q" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">TECH FAM</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gmail:ayomide0001111@gmail.com">Services</a></li>
+        <li><a href="https://whatsapp.com/channel/0029VajdUjO7tkj0v3rZHw3q">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero-title">Welcome to TECH FAM</h1>
+      <p class="hero-subtitle">Crafting beautiful and responsive web experiences.</p>
+      <a href="baruka2.html" class="cta-button">Explore More</a>
+    </div>
+  </header>
+
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a team of passionate developers and designers dedicated to creating stunning websites that leave a lasting impression.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section services-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Web Design</h3>
+          <p>We create visually appealing and user-friendly designs tailored to your needs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>From simple websites to complex web applications, we've got you covered.</p>
+        </div>
+        <div class="service-card">
+          <h3> Optimization and Whatsapp bots</h3>
+          <p>Boost your website's visibility and rank higher on search engines,and learn to edit and deploy or buy whatsapp bots.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button class="cta-button" onclick="window.location.href='https://whatsapp.com/channel/0029VajdUjO7tkj0v3rZHw3q">
+            send message
+          </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; TECH FAM. All rights reserved.</p>
+  </footer>
+  <style>
+  /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header and Navigation */
+.header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ffdd57;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.cta-button:hover {
+  background-color: #ffcc00;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+.about-section {
+  background-color: #fff;
+}
+
+.services-section {
+  background-color: #f4f4f4;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(91, 177, 184, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact-section {
+  background-color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px 30px;
+  background-color: #6a11cb;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2575fc;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+</style>
+</body>
+</html>

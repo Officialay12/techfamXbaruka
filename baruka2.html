@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baruka - Solo Leveling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="baruka-container">
+    <div class="baruka">
+      <div class="baruka-body"></div>
+      <div class="baruka-aura"></div>
+      <div class="baruka-glowing-eyes"></div>
+      <div class="baruka-weapon"></div>
+    </div>
+    <div class="baruka-text">
+      <h1>Baruka</h1>
+      <p>The Shadow Monarch's Loyal Warrior</p>
+      <a href="baruka3.html">baruka</a>
+    </div>
+  </div>
+<style>
+    /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Baruka Container */
+.baruka-container {
+  position: relative;
+  text-align: center;
+}
+
+/* Baruka Character */
+.baruka {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.baruka-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.imgur.com/baruka-body.png') no-repeat center center;
+  background-size: contain;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite;
+}
+
+.baruka-aura {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.5), rgba(0, 0, 0, 0));
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: pulse 2s infinite;
+}
+
+.baruka-glowing-eyes {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #00ffff;
+  border-radius: 50%;
+  top: 30%;
+  left: 40%;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  z-index: 3;
+  animation: glow 1.5s infinite alternate;
+}
+
+.baruka-weapon {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url('https://i.imgur.com/baruka-weapon.png') no-repeat center center;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 2;
+  animation: spin 5s linear infinite;
+}
+
+/* Text Styling */
+.baruka-text {
+  margin-top: 20px;
+}
+
+.baruka-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  animation: text-glow 2s infinite alternate;
+}
+
+.baruka-text p {
+  font-size: 20px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.4;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  100% {
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+}
+</style>
+</body>
+</html>
